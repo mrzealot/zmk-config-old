@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/ext_power.h>
 #include "hungarian.h"
 
 
@@ -44,8 +45,8 @@
 
                         bindings = <
      &kp GT    &kp RBKT &kp RBRC  &kp RPRN  &kp BSLH  	&kp TILDE &trans &trans &trans &kp ATSN 
-            &kp LT    &kp LBKT &kp LBRC  &kp LPRN  &kp FSLH     &kp PRCNT &kp ASTRK &trans &kp COLN  &kp SCLN 
-            &kp HASH  &kp CURU &kp QMARK &kp BANG  &kp PIPE 	&kp AMPS  &kp EQL &trans &kp KPLS &kp GRAVE
+            &kp LT    &kp LBKT &kp LBRC  &kp LPRN  &kp FSLH     &kp PRCNT &kp ASTRK &trans &kp COLN  &kp X 
+            &kp HASH  &kp CURU &kp QMARK &kp BANG  &kp PIPE 	&kp AMPS  &kp EQL &trans &kp KPLS &ext_power EP_OFF
             &kp UNDER &kp QUOT &kp DQT				&kp DOT  &kp CMMA &kp MINUS
                         >;
                 };
