@@ -41,8 +41,8 @@
 #define HU_OO (EQUAL) // ó
 
 // q row
-#define HU_OEE (LBRC) // ő
-#define HU_UU (RBRC) // ú
+#define HU_OEE (LBKT) // ő
+#define HU_UU (RBKT) // ú
 
 // a row
 #define HU_EE (SCLN) // é

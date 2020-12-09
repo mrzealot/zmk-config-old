@@ -12,77 +12,67 @@
 
 
 / {
-        keymap {
-                compatible = "zmk,keymap";
+    keymap {
+        compatible = "zmk,keymap";
 
-                default_layer {
+        default_layer {
 
-                        bindings = <
-   &kp Q &kp W &kp F &kp P &kp B   			&kp J &kp L  &kp U    &kp HU_Y  &kp HU_AA
-   &kp A &kp R &kp S &kp T &kp G   			&kp M &kp N  &kp E    &kp I  &kp O
-   &kp HU_Z &kp X &kp C &kp D &kp V   			&kp K &kp H  &sl 1    &sl 2 &kp HU_EE
-   &mt LCTL TAB &lt 3 SPACE  &mt LC(LS(LALT)) RET      	&sk LSFT &lt 4 BKSP   &mt LGUI ESC
-                        >;
-                };
-
-
-
-                sym_layer {
-
-                        bindings = <
-            &kp HU_MORE &kp HU_RCBR &kp HU_RBKT  &kp HU_RPRN  &kp HU_BSLS  	&kp HU_TILD &kp HU_CIRC &kp HU_CRSS &kp HU_DIV &kp HU_AT
-            &kp HU_LESS &kp HU_LCBR &kp HU_LBKT  &kp HU_LPRN  &kp HU_SLSH      &kp HU_PERC &kp HU_ASTR &kp HU_RING &kp HU_COLN &kp HU_SCLN
-            &kp HU_HASH &kp HU_DLR &kp HU_QST &kp HU_EXLM  &kp HU_PIPE 	&kp HU_AMPR &kp HU_EQL &kp HU_PARA &kp HU_PLUS &kp HU_GRV
-            &kp HU_UNDS &kp HU_QUOT &kp HU_DQOT				&kp HU_DOT  &kp HU_COMM &kp HU_MINS
-              
-
-                        >;
-                };
-
-
-         
-  		msc_layer {
-
-                        bindings = <
-     &kp GT    &kp RBKT &kp RBRC  &kp RPRN  &kp BSLH  	&kp TILDE &trans &trans &trans &kp ATSN 
-            &kp LT    &kp LBKT &kp LBRC  &kp LPRN  &kp FSLH     &kp PRCNT &kp ASTRK &trans &kp COLN  &kp X 
-            &kp HASH  &kp CURU &kp QMARK &kp BANG  &kp PIPE 	&kp AMPS  &kp EQL &trans &kp KPLS &ext_power EP_OFF
-            &kp UNDER &kp QUOT &kp DQT				&kp DOT  &kp CMMA &kp MINUS
-                        >;
-                };
+            bindings = <
+                &kp Q    &kp W &kp F &kp P &kp B        			&kp J &kp L &kp U &kp HU_Y &kp HU_AA
+                &kp A    &kp R &kp S &kp T &kp G        			&kp M &kp N &kp E &kp I    &kp O
+                &kp HU_Z &kp X &kp C &kp D &kp V        			&kp K &kp H &sl 1 &sl 2    &kp HU_EE
+                &mt LCTL TAB &lt 3 SPACE &mt LC(LS(LALT)) RET      	&sk LSFT &lt 4 BKSP   &mt LGUI ESC
+            >;
+        };
 
 
 
-                nav_layer {
+        sym_layer {
 
-                        bindings = <
-   &kp F1    &kp F2    &kp F3    &kp F4    &kp F5  		&kp MINUS &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp BKSP
-   &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   		&kp NUM_0 &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp DOT
-   &kp F11   &kp F12   &kp F13	 &trans    &trans 		&kp PLUS  &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp CMMA
-   &kp TAB &kp SPACE &bt BT_CLR					&trans 	&trans &trans
-                        >;
-                };
+            bindings = <
+                &kp HU_MORE &kp HU_RCBR &kp HU_RBKT  &kp HU_RPRN  &kp HU_BSLS  	    &kp HU_TILD &kp HU_CIRC &kp HU_PARA &kp HU_EURO &kp HU_AT
+                &kp HU_LESS &kp HU_LCBR &kp HU_LBKT  &kp HU_LPRN  &kp HU_SLSH       &kp HU_PERC &kp HU_ASTR &kp HU_RING &kp HU_COLN &kp HU_SCLN
+                &kp HU_HASH &kp HU_DLR  &kp HU_QST   &kp HU_EXLM  &kp HU_PIPE 	    &kp HU_AMPR &kp HU_EQL  &trans      &kp HU_PLUS &kp HU_GRV
+                                        &kp HU_UNDS  &kp HU_QUOT  &kp HU_DQOT		&kp HU_DOT  &kp HU_COMM &kp HU_MINS
+            >;
+        };
 
 
+    
+        msc_layer {
 
-//NUM
-                num_layer {
-
-                        bindings = <
-  
-   &kp F1    &kp F2    &kp F3    &kp F4    &kp F5  		&kp MINUS &kp NUM_7 &kp NUM_8 &kp NUM_9 &kp BKSP
-   &kp F6    &kp F7    &kp F8    &kp F9    &kp F10   		&kp NUM_0 &kp NUM_4 &kp NUM_5 &kp NUM_6 &kp DOT
-   &kp F11   &kp F12   &kp F13	 &trans    &trans 		&kp PLUS  &kp NUM_1 &kp NUM_2 &kp NUM_3 &kp CMMA
-   &kp TAB &kp SPACE &kp RET 					&trans 	&trans &trans
-
-                        >;
-                };
-
-  
+            bindings = <
+                &trans    &kp HU_UEE &kp HU_UE   &kp HU_UU   &trans         	&trans     &trans      &trans      &trans &trans
+                &kp HU_II &kp HU_OEE &kp HU_OE   &kp HU_OO   &trans             &trans     &trans      &trans      &trans &trans
+                &trans    &trans     &trans      &trans      &trans         	&trans     &trans      &trans      &trans &trans
+                                     &kp HU_UNDS &kp HU_QUOT &kp HU_DQOT		&kp HU_DOT &kp HU_COMM &kp HU_MINS
+            >;
+        };
 
 
 
+        nav_layer {
+
+            bindings = <
+                &kp K_MUTE   &kp K_PREV &kp K_PP  &kp K_NEXT &kp K_VOL_UP  		    &none     &kp PG_UP &kp SPACE &kp PG_DN &kp INS
+                &sk LGUI     &sk LALT   &sk LSFT  &sk LCTL   &kp K_VOL_DN   		&kp K_APP &kp LEFT  &kp UP    &kp RIGHT &kp TAB
+                &kp LC(HU_Z) &kp LC(X)  &kp LC(C) &kp LC(D)  &kp LC(V) 		        &none     &kp HOME  &kp DOWN  &kp END   &kp RET
+                                        &trans    &trans     &trans                 &kp DEL   &kp BKSP  &kp ESC
+            >;
+        };
+
+
+
+        num_layer {
+
+            bindings = <
+                &kp F1    &kp F2    &kp F3    &kp F4          &kp F5  		          &kp HU_MINS &kp HU_7 &kp HU_8 &kp HU_9 &kp BKSP
+                &kp F6    &kp F7    &kp F8    &kp F9          &kp F10   		      &kp HU_0    &kp HU_4 &kp HU_5 &kp HU_6 &kp HU_DOT
+                &kp F11   &kp F12   &kp F13	  &kp PRINTSCREEN &kp PAUSE_BREAK 		  &kp HU_PLUS &kp HU_1 &kp HU_2 &kp HU_3 &kp HU_COMM
+                                    &kp TAB   &kp SPACE       &kp RET 			      &trans 	  &trans   &trans
+            >;
+        };
 
           
-        };
+    };
 };
